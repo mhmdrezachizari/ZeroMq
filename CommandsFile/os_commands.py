@@ -13,5 +13,5 @@ async def execute_os_command(command_data):
         )
         stdout, stderr = await result.communicate()
         return {"result": stdout.decode() if result.returncode == 0 else stderr.decode()}
-    except Exception as e:
-        return {"error": str(e)}
+    except Exception as error:
+        return {"error": str(error)}

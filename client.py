@@ -7,7 +7,7 @@ class AsyncClient:
         #create context ...
         self.context = zmq.Context()
         # for requests
-        self.socket = self.context.socket(zmq.REQ)\
+        self.socket = self.context.socket(zmq.REQ)
         #connect with server with socket object
         self.socket.connect(f'tcp://{self.host}:{self.port}')
 #send operations
@@ -21,22 +21,22 @@ class AsyncClient:
 #for run with client.py
 if __name__ == "__main__":
     client = AsyncClient()
-
+    #test error for os
     os_command = {
-        "command_type": "fa",
+        "command_type": "hello im a os operation",
         "command_name": "ping",
         "parameters": ["127.0.0.1", "-n", "4"]
     }
-
+    #test error for math
     math_command = {
         "command_type": "compute",
-        "expression": "(2 + 2) * 10"
+        "expression": "(2 + 2) * 10dfsvff"
     }
 
-#test os
+#test os => return error
     client.send_command(command=os_command)
 
-#test math
+#test math => return error
     client.send_command(command=math_command)
 
 #send a multiple requests

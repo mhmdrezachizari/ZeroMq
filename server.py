@@ -2,8 +2,8 @@ import asyncio
 import zmq
 import zmq.asyncio
 import json
-from Commands.os_commands import execute_os_command
-from Commands.math_commands import evaluate_math_expression
+from CommandsFile.os_commands import execute_os_command
+from CommandsFile.math_commands import evaluate_math_expression
 #this code can check the Os(operation system) such as widows , etc
 #Thats code check the Windows.
 if hasattr(asyncio, 'WindowsSelectorEventLoopPolicy'):

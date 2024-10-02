@@ -1,11 +1,11 @@
-import sympy as sp
+import sympy as Math
 
 async def evaluate_math_expression(command_data):
     expression = command_data.get("expression")
     try:
-        result = sp.sympify(expression)
+        result = Math.sympify(expression)
         return {"result": int(result)}
-    except sp.SympifyError:
-        return {"error": "Invalid mathematical expression"}
-    except Exception as e:
-        return {"error": str(e)}
+    except Math.SympifyError:
+        return {"error": "mmmm i think you have wrong expression"}
+    except Exception as error:
+        return {"error": str(error)}
