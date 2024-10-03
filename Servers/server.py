@@ -2,9 +2,9 @@ import asyncio
 import zmq
 import zmq.asyncio
 import json
-from OperationsFile.Os import OsHandler
-from OperationsFile.Math import MathHandler
-from Config.config_client_server import config
+from ZeroMq.OperationsFile.Os import OsHandler
+from ZeroMq.OperationsFile.Math import MathHandler
+from ZeroMq.Config.config_client_server import config
 #this code can check the Os(operation system) such as widows , etc
 #Thats code check the Windows.
 if hasattr(asyncio, 'WindowsSelectorEventLoopPolicy'):
