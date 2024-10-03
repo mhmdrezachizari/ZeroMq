@@ -17,7 +17,7 @@ Server:
 
 The server handles the ZMQ communication and listens for OS or math commands sent from the client.
 
-The server starts on localhost (127.0.0.1) on port 4000. If port 4000 is busy, you can change it by editing line 14 in server.py and line 9 in client.py
+The server starts on localhost (127.0.0.1) on port 4000. If port 4000 is busy, you can change it by editing Config with config.py
 
 I have tried to implement the project using OOP. Here's a brief summary of my code:
 
