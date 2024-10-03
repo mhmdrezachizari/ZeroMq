@@ -2,8 +2,8 @@ import asyncio
 import zmq
 import zmq.asyncio
 import json
-from CommandsFile.os_commands import execute_os_command
-from CommandsFile.math_commands import evaluate_math_expression
+from OperationsFile.Os import OsHandler
+from OperationsFile.Math import MathHandler
 #this code can check the Os(operation system) such as widows , etc
 #Thats code check the Windows.
 if hasattr(asyncio, 'WindowsSelectorEventLoopPolicy'):
@@ -30,9 +30,9 @@ class AsyncServer:
             command_type = command_data.get("command_type")
 
             if command_type == "os":
-                response = await execute_os_command(command_data)
+                response = await OsHandler(command_data)
             elif command_type == "compute":
-                response = await evaluate_math_expression(command_data)
+                response = await MathHandler(command_data)
             else:
                 response = {"error": "Unknown command type"}
 
