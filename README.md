@@ -66,3 +66,29 @@ Then, run the client.py file using the following command:
     python client.py
 
 This will connect the client to the server and send commands to it.
+
+
+  
+Programming Language and Required Libraries:
+
+To run your project, you need to install the programming language Python and several libraries. Below is the list of the required language and libraries:
+Programming Language:
+
+  Python 3.6 or higher: Make sure you have one of the versions 3.6 or above installed.
+
+Libraries:
+
+  pyzmq: A library for using ZeroMQ in Python.
+        Installation:
+
+    pip install pyzmq
+
+sympy: A library for mathematical computations.
+
+  Installation:
+
+        pip install sympy
+
+asyncio: This library is included by default in Python 3.3 and higher, so no separate installation is needed. It is used for asynchronous programming.
+
+json: This library is also included by default in Python and is used for working with JSON data.
