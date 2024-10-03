@@ -19,13 +19,14 @@ class AsyncServer:
         self.socket.bind(f'tcp://{self.host}:{self.port}')
         print(f"Hello server its running on port {self.port} and is listening on Localhost:{self.port}")
         #handel a request and raedy for recive a json :)
-    async def handle_request(self):
+    async def th(self):
         while True:
             message = await self.socket.recv_string()
             asyncio.create_task(self.process_command(message))
 #that name its procces and the function can proccessing
     async def process_command(self, command):
         try:
+
             command_data = json.loads(command)
             command_type = command_data.get("command_type")
 

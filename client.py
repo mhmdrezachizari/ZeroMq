@@ -19,7 +19,6 @@ class AsyncClient:
             await self.socket.send_string(json.dumps(command))
             response = await self.socket.recv_string()
             print("Server Response:", response)
-
 #send a few instructions
 async def FuctionForSendAsynchronousCommand():
     client = AsyncClient()
