@@ -87,7 +87,7 @@ sympy: A library for mathematical computations.
 
   Installation:
 
-        pip install sympy
+    pip install sympy
 
 asyncio: This library is included by default in Python 3.3 and higher, so no separate installation is needed. It is used for asynchronous programming.
 
