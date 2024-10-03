@@ -12,7 +12,7 @@ if hasattr(asyncio, 'WindowsSelectorEventLoopPolicy'):
 
 class AsyncServer:
     #create a context , i think the context means a main objects
-    def __init__(self, host='127.0.0.1', port=4000):
+    def __init__(self, host=config["host"], port=config["port"]):
         self.host = host
         self.port = port
         self.context = zmq.asyncio.Context()
