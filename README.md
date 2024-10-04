@@ -57,15 +57,17 @@ To get started with the project:
 
   First, run the server.py file using the following command:
 
-    python server.py
+    python ZeroMq.Servers.server.py
 
 This will start the server and make it ready to receive requests from the client.
 
-Then, run the client.py file using the following command:
+Then, run the clientTest using the following command:
 
-    python client.py
+    python ZeroMq.Client_Task_Test.client_task_test.py
 
 This will connect the client to the server and send commands to it.
+
+you can write youre test commands in this file
 
 
   
